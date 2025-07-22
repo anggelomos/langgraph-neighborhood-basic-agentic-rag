@@ -1,0 +1,26 @@
+[project]
+name = "langgraph-neighborhood-basic-agentic-rag"
+version = "0.1.0"
+description = "A basic agentic RAG to practice the concepts in the hugging  face course."
+authors = [
+    {name = "Angelo Mosquera",email = "anggelomos@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+package-mode = false
+dependencies = [
+    "datasets (>=4.0.0,<5.0.0)",
+    "langchain-community (>=0.3.27,<0.4.0)",
+    "rank-bm25 (>=0.2.2,<0.3.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.12.4"
+flake8 = "^7.3.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
