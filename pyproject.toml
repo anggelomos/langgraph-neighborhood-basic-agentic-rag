@@ -11,7 +11,11 @@ package-mode = false
 dependencies = [
     "datasets (>=4.0.0,<5.0.0)",
     "langchain-community (>=0.3.27,<0.4.0)",
-    "rank-bm25 (>=0.2.2,<0.3.0)"
+    "rank-bm25 (>=0.2.2,<0.3.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "langchain-huggingface (>=0.3.1,<0.4.0)",
+    "langgraph (>=0.5.4,<0.6.0)",
+    "langchain-openai (>=0.3.28,<0.4.0)"
 ]
 
 [tool.poetry]
@@ -20,6 +24,7 @@ package-mode = false
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.12.4"
 flake8 = "^7.3.0"
+graphviz = "^0.21"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
