@@ -30,9 +30,10 @@ docs = [
 
 retriever = BM25Retriever.from_documents(docs)
 
+
 def extract_info(query: str) -> str:
     """Extract information from the neighborhood data based on the query.
-    
+
     Args:
         query: The query to search for in the neighborhood data.
 
@@ -45,6 +46,7 @@ def extract_info(query: str) -> str:
         return "\n\n".join([doc.page_content for doc in retrieved_docs])
     else:
         return "No results found for the query."
+
 
 neighborhood_info_tool = Tool(
     name="neighborhood_info_tool",
